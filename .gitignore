@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+
+# QGIS
+*.qgs~
+*.qgz~
+
+# Cache de estradas baixadas (fica no perfil do QGIS, mas por garantia)
+piparouter_estradas/
+_parcial_*/
+*.gpkg
+*.gpkg-shm
+*.gpkg-wal
+
+# Saídas do plugin
+*.kmz
+*.kml
+*.xlsx
+operacao_pipa.json
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Pacote gerado
+pipa_router.zip

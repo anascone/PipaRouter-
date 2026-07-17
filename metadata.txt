@@ -1,0 +1,39 @@
+[general]
+name=PipaRouter
+qgisMinimumVersion=3.22
+description=Programação de rotas de caminhão-pipa para abastecimento emergencial de água
+version=0.0.1
+author=Antonio A. Coelho Neto
+email=neto@aguasdopiaui.com.br
+
+about=<b>EXPERIMENTAL — em validação, ainda não usado em operação real. Confira a programação antes de mandar o caminhão.</b>
+    <br><br>
+    Monta a programação diária de caminhões-pipa: você marca no mapa onde o caminhão enche e quais localidades precisam de água, e o plugin devolve a ordem das entregas, o horário de cada parada e o caminho pela estrada.
+    <br><br>
+    O traçado segue a malha viária real, com velocidade por tipo de via — carroçável não é tratada como asfalto. Isso muda o horário de chegada, que é o que o encarregado precisa acertar.
+    <br><br>
+    Baixa as estradas do OpenStreetMap sozinho e guarda em cache: depois do primeiro download, funciona sem internet. Pensado para operação em zona rural do semiárido, onde não há sinal.
+    <br><br>
+    Exporta KMZ para o celular do motorista e planilha de programação. Com servidor de rotas OSRM, inclui instruções de navegação em português.
+    <br><br>
+    Dados © OpenStreetMap contributors (ODbL).
+
+tracker=https://github.com/assuncaoneto/pipa-router/issues
+repository=https://github.com/assuncaoneto/pipa-router
+
+hasProcessingProvider=no
+tags=water,pipa,caminhao-pipa,abastecimento,saneamento,emergencia,seca,semiarido,osrm,openstreetmap
+homepage=https://github.com/assuncaoneto/pipa-router
+category=Plugins
+icon=resources/icon.png
+experimental=True
+deprecated=False
+
+changelog=<b>0.0.1</b> — Primeira versão pública (experimental).
+    <ul>
+    <li>Roteamento pela malha viária, com velocidade por tipo de via</li>
+    <li>Download automático de estradas do OpenStreetMap, com cache para uso offline</li>
+    <li>Roteamento por servidor OSRM (local ou público), com instruções de navegação em português</li>
+    <li>Frota heterogênea, múltiplas viagens por caminhão e entrega parcial</li>
+    <li>Exportação KMZ, KML, CSV e XLSX</li>
+    </ul>

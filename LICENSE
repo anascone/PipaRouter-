@@ -1,0 +1,56 @@
+PipaRouter — roteirização de caminhões-pipa no QGIS
+Copyright (C) 2025  Antonio A. Coelho Neto
+
+Este programa é software livre: você pode redistribuí-lo e/ou modificá-lo
+sob os termos da Licença Pública Geral GNU (GNU GPL), versão 2, conforme
+publicada pela Free Software Foundation, ou (a seu critério) qualquer
+versão posterior.
+
+Este programa é distribuído na esperança de que seja útil, mas SEM NENHUMA
+GARANTIA; sem sequer a garantia implícita de COMERCIABILIDADE ou ADEQUAÇÃO
+A UMA FINALIDADE ESPECÍFICA. Veja a Licença Pública Geral GNU para mais
+detalhes.
+
+Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com
+este programa. Se não, veja <https://www.gnu.org/licenses/gpl-2.0.html>.
+
+
+------------------------------------------------------------------------
+POR QUE GPL-2
+------------------------------------------------------------------------
+
+Não é escolha de estilo. Este plugin importa `qgis.core` e `qgis.gui`
+(PyQGIS), que são licenciados sob GPL-2+. Trabalhos derivados que fazem
+link com código GPL precisam ser distribuídos sob a mesma licença.
+
+------------------------------------------------------------------------
+TEXTO COMPLETO DA LICENÇA
+------------------------------------------------------------------------
+
+O texto integral da GNU General Public License version 2 deve acompanhar
+este arquivo. Baixe a versão oficial em:
+
+    https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+e substitua este bloco pelo conteúdo dela antes de publicar o repositório.
+(Não foi incluído aqui porque o ambiente de desenvolvimento não tinha
+acesso a gnu.org, e reproduzir texto de licença de memória é arriscado —
+um erro de transcrição pode invalidar a licença.)
+
+------------------------------------------------------------------------
+DADOS DE TERCEIROS
+------------------------------------------------------------------------
+
+Este plugin baixa e processa dados do OpenStreetMap:
+
+    © OpenStreetMap contributors
+    Licença: Open Database License (ODbL) v1.0
+    https://www.openstreetmap.org/copyright
+
+A ODbL permite uso comercial e redistribuição, inclusive dos produtos
+derivados (KMZ, planilhas, camadas), exigindo atribuição. O plugin inclui
+a atribuição nos metadados das camadas e nos arquivos exportados.
+
+O roteamento por servidor usa OSRM (Open Source Routing Machine),
+licenciado sob BSD-2-Clause. O plugin não distribui código do OSRM; apenas
+consome sua API HTTP.
